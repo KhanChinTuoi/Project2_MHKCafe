@@ -1,0 +1,63 @@
+﻿@model MHKCafe.Models.ThucDon
+
+@{
+    ViewData["Title"] = "Xóa món";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-danger text-white">
+            <h4 class="mb-0"><i class="bi bi-exclamation-triangle me-2"></i>Xác nhận xóa món</h4>
+        </div>
+
+        <div class="card-body">
+            <div class="alert alert-warning d-flex align-items-center" role="alert">
+                <i class="bi bi-exclamation-circle-fill me-2 fs-4"></i>
+                <div>
+                    Bạn có chắc chắn muốn <strong>xóa vĩnh viễn</strong> món này?  
+                    Hành động này không thể hoàn tác.
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Hình ảnh món -->
+                <div class="col-md-5 text-center">
+                    <img src="@Model.HinhAnh"
+                         alt="@Model.TenMon"
+                         class="img-fluid rounded shadow-sm border"
+                         style="max-height: 250px; object-fit: cover;" />
+                </div>
+
+                <!-- Thông tin món -->
+                <div class="col-md-7">
+                    <h3 class="fw-bold">@Model.TenMon</h3>
+                    <p class="text-muted mb-3">@Model.MoTa</p>
+
+                    <p class="mb-2">
+                        <span class="fw-semibold">Giá:</span>
+                        <span class="text-danger fw-semibold">
+                            @String.Format("{0:N0} VNĐ", Model.Gia)
+                        </span>
+                    </p>
+
+                    <p>
+                        <span class="fw-semibold">Trạng thái:</span>
+                        <span class="badge @(Model.TrangThai == true ? "bg-success" : "bg-secondary")">
+                            @(Model.TrangThai == true ? "Còn bán" : "Hết hàng")
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <hr />
+
+            <form asp-action="Delete" class="text-end mt-3">
+                <input type="hidden" asp-for="ThucDonId" />
+                <button type="submit" class="btn btn-danger me-2">
+                    <i class="bi bi-trash"></i> Xóa
+                </button>
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left"></i> Quay lại danh sách
+                </a>
+            </form>
+

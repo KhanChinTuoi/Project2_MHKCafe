@@ -1,0 +1,161 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MHKCafe
+build_property.RootNamespace = MHKCafe
+build_property.ProjectDir = C:\MHKCafe\Project2_MHKCafe\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\MHKCafe\Project2_MHKCafe
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkAdmins/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQWRtaW5zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkAdmins/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQWRtaW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkAdmins/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQWRtaW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkAdmins/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQWRtaW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkAdmins/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQWRtaW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkChiTietHoaDons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQ2hpVGlldEhvYURvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkChiTietHoaDons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQ2hpVGlldEhvYURvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkChiTietHoaDons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQ2hpVGlldEhvYURvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkChiTietHoaDons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQ2hpVGlldEhvYURvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkChiTietHoaDons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQ2hpVGlldEhvYURvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkHoaDons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9hRG9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkHoaDons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9hRG9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkHoaDons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9hRG9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkHoaDons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9hRG9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkHoaDons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9hRG9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkHome/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkNguoiDungs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrTmd1b2lEdW5nc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkNguoiDungs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrTmd1b2lEdW5nc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkNguoiDungs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrTmd1b2lEdW5nc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkNguoiDungs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrTmd1b2lEdW5nc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkNguoiDungs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrTmd1b2lEdW5nc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/Shared/_LayoutHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/Shared/_mhkAdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9taGtBZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-ul2utnw748

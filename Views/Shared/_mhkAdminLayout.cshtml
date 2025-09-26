@@ -1,0 +1,108 @@
+﻿@* _mhkAdminLayout.cshtml *@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MHKCafe</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MHKCafe.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        .sidebar {
+            min-height: 100vh; /* full height */
+            width: 220px;
+        }
+
+            /* Giữ nguyên width, tránh nhảy dòng khi active */
+            .sidebar .nav-link {
+                width: 100%; /* giữ toàn bộ chiều rộng */
+                white-space: nowrap; /* không cho xuống dòng */
+                padding: .5rem 1rem; /* cố định padding */
+                box-sizing: border-box; /* tính cả padding vào width */
+                transition: background-color .2s ease;
+            }
+
+                /* Màu khi hover */
+                .sidebar .nav-link:hover {
+                    background-color: #0d6efd;
+                    color: #fff !important;
+                }
+
+                /* Màu khi được chọn (active) */
+                .sidebar .nav-link.active {
+                    background-color: #0d6efd;
+                    color: #fff !important;
+                }
+
+        .content-area {
+            margin-left: 220px; /* khớp với width sidebar */
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar bg-light border-end d-flex flex-column p-3">
+            <a class="navbar-brand mb-4 fw-bold text-center" asp-area="" asp-controller="mhkHome" asp-action="Index">
+                <i class="bi bi-cup-hot"></i> MHKCafe
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li>
+                    <a class="nav-link text-dark @(ViewData["Title"]?.ToString() == "Privacy" ? "active" : "")"
+                       asp-area="" asp-controller="mhkHome" asp-action="Privacy">
+                        <i class="bi bi-people"></i> Thông tin sinh viên
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark @(ViewData["Title"]?.ToString() == "Thực Đơn" ? "active" : "")"
+                       asp-area="" asp-controller="mhkThucDons" asp-action="Index">
+                        <i class="bi bi-journal-richtext"></i> Thực đơn
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark @(ViewData["Title"]?.ToString() == "Người Dùng" ? "active" : "")"
+                       asp-area="" asp-controller="mhkNguoiDungs" asp-action="Index">
+                        <i class="bi bi-journal-richtext"></i> Người Dùng
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark @(ViewData["Title"]?.ToString() == "Hoá Đơn" ? "active" : "")"
+                       asp-area="" asp-controller="mhkHoaDons" asp-action="Index">
+                        <i class="bi bi-journal-richtext"></i> Hoá Đơn
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark @(ViewData["Title"]?.ToString() == "Chi Tiết Hoá Đơn" ? "active" : "")"
+                       asp-area="" asp-controller="mhkChiTietHoaDons" asp-action="Index">
+                        <i class="bi bi-journal-richtext"></i> Chi Tiết Hoá Đơn
+                    </a>
+                </li>
+            </ul>
+            <hr />
+            <footer class="text-center text-muted small mt-auto">
+                &copy; 2025 - MHKCafe
+            </footer>
+        </nav>
+
+        <!-- Nội dung chính -->
+        <div class="content-area flex-grow-1">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
