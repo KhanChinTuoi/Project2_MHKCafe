@@ -13,9 +13,8 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="mhkHome" asp-action="mhkIndex">
-                    <img src="images/logo1.jpg" alt="Logo" style="height: 60px;" class="me-2">
-
+                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="mhkHome" asp-action="Index">
+                    <img src="~/images/logo1.jpg" alt="Logo" style="height: 60px;" class="me-2">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -24,31 +23,35 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav me-auto d-flex flex-row gap-3">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="mhkIndex">Trang chủ</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="Index">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="mhkAbout">Cửa hàng</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="About">Cửa hàng</a>
                         </li>
-
-
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="mhkAbout">Thực đơn</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="About">Thực đơn</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="mhkAbout">Tin tức</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="About">Tin tức</a>
                         </li>
                     </ul>
-					<ul class="navbar-nav d-flex flex-row gap-3">
-                        <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-							🛒 Giỏ Hàng
-						</a>
-                        <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                            Đăng nhập
-                        </a>
-                        <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                            Đăng ký
-                        </a>
+                    <ul class="navbar-nav d-flex flex-row gap-3 align-items-center">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary position-relative" asp-controller="mhkCart" asp-action="Index">
+                                <i class="bi bi-cart3"></i> Giỏ Hàng
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartBadge">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="#">
+                                <i class="bi bi-person"></i> Đăng nhập
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="#">
+                                <i class="bi bi-person-plus"></i> Đăng ký
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -63,6 +66,137 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- JavaScript cho giỏ hàng -->
+    <script>
+        // Hàm thêm vào giỏ hàng toàn cục
+        function addToCart(productId, productName, price, imageUrl) {
+            fetch('/MhkCart/AddToCart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                },
+                body: JSON.stringify({
+                    productId: productId,
+                    productName: productName,
+                    price: price,
+                    imageUrl: imageUrl,
+                    quantity: 1
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Hiển thị thông báo
+                    showCartNotification('✅ Đã thêm "' + productName + '" vào giỏ hàng!');
+
+                    // Cập nhật số lượng giỏ hàng
+                    updateCartBadge(data.totalItems);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showCartNotification('❌ Có lỗi xảy ra khi thêm vào giỏ hàng!');
+            });
+        }
+
+        // Hàm hiển thị thông báo
+        function showCartNotification(message) {
+            // Tạo toast notification
+            const toast = document.createElement('div');
+            toast.className = 'position-fixed bottom-0 end-0 p-3';
+            toast.style.zIndex = '1050';
+            toast.innerHTML = `
+                <div class="toast show" role="alert">
+                    <div class="toast-header">
+                        <strong class="me-auto">MHK Cafe</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">
+                        ${message}
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(toast);
+
+            // Tự động xóa sau 3 giây
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+
+        // Hàm cập nhật badge giỏ hàng
+        function updateCartBadge(count) {
+            const cartBadge = document.getElementById('cartBadge');
+            if (cartBadge) {
+                cartBadge.textContent = count;
+                // Hiệu ứng nhấp nháy
+                cartBadge.classList.add('pulse');
+                setTimeout(() => {
+                    cartBadge.classList.remove('pulse');
+                }, 1000);
+            }
+        }
+
+        // Load số lượng giỏ hàng khi trang được tải
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+        });
+
+        // Hàm lấy số lượng giỏ hàng từ server
+        function updateCartCount() {
+            fetch('/MhkCart/GetCartCount')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        updateCartBadge(data.totalItems);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+
+    <style>
+        .pulse {
+            animation: pulse 0.5s ease-in-out;
+        }
+
+        @@keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .btn-outline-primary {
+            border-color: #8B4513;
+            color: #8B4513;
+        }
+
+            .btn-outline-primary:hover {
+                background-color: #8B4513;
+                border-color: #8B4513;
+                color: white;
+            }
+
+        .nav-link.text-dark:hover {
+            color: #8B4513 !important;
+        }
+
+        .badge.bg-danger {
+            background-color: #dc3545 !important;
+            font-size: 0.7em;
+        }
+    </style>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
