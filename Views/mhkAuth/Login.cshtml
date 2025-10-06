@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "_AuthLayout";
+    ViewData["Title"] = "Đăng nhập";
+}
+
+<div class="container mt-5" style="max-width: 450px;">
+    <h3 class="text-center mb-4">Đăng nhập quản trị</h3>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger text-center">@ViewBag.Error</div>
+    }
+
+    <form asp-action="Login" method="post">
+        <div class="form-group mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="matKhau">Mật khẩu</label>
+            <input type="password" class="form-control" id="matKhau" name="matKhau" placeholder="Nhập mật khẩu" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+    </form>
+</div>

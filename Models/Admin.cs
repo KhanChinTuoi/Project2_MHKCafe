@@ -16,4 +16,6 @@ public partial class Admin
     public string? Quyen { get; set; }
 
     public DateTime? NgayTao { get; set; }
+
+    public string TrangThai { get; set; }
 }

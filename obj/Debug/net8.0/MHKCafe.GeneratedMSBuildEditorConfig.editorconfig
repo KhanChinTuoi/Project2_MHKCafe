@@ -48,6 +48,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQWRtaW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkAuth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkAuth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/MHKCafe/Project2_MHKCafe/Views/mhkCart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -142,6 +150,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/MHKCafe/Project2_MHKCafe/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/Shared/_AuthLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/MHKCafe/Project2_MHKCafe/Views/Shared/_LayoutHome.cshtml]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MHKCafe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+225807a1718df5ef973004c733df4fdec7243212")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69bd50ad0967230ea692c92d19dfadebeb71a081")]
 [assembly: System.Reflection.AssemblyProductAttribute("MHKCafe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MHKCafe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

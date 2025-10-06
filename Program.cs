@@ -10,15 +10,16 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<MhkcafeContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MHKCafeConnection")));
 
-// THÊM CẤU HÌNH SESSION - QUAN TRỌNG
-builder.Services.AddDistributedMemoryCache();
+// 🔹 Thêm cấu hình cho Session
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // thời gian session tồn tại
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
-    options.Cookie.Name = "MHKCafe.Session";
 });
+
+// 🔹 Cho phép truy cập Session từ Razor (Layout)
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
@@ -34,7 +35,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// THÊM DÒNG NÀY - QUAN TRỌNG (phải đặt sau UseRouting và trước UseAuthorization)
+// 🔹 Kích hoạt Session
 app.UseSession();
 
 app.UseAuthorization();

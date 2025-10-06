@@ -57,39 +57,131 @@
 </div>
 
 @section ExtraContent {
-    <section class="featured-products">
-        <h2>CÁC SẢN PHẨM NỔI BẬT</h2>
-        <div class="product-list">
-            <div class="product-card">
-                <img src="~/images/cafe1_clean.png" alt="Espresso">
-                <h3>Espresso</h3>
-                <p class="price">35.000đ</p>
-                <button class="btn-order">Đặt ngay</button>
-            </div>
+    <!-- SẢN PHẨM KHUYẾN MÃI -->
+    <section class="product-sale my-5">
+        <div class="container">
+            <h3 class="text-white p-3" style="background-color: #212529;">CÁC SẢN PHẨM NỔI BẬT</h3>
+            <div class="row text-center">
 
-            <div class="product-card">
-                <img src="~/images/cafe2_clean.png" alt="Capuchino">
-                <h3>Capuchino</h3>
-                <p class="price">40.000đ</p>
-                <button class="btn-order">Đặt ngay</button>
-            </div>
+                <!-- 1 sản phẩm -->
+                <div class="product-list">
+                    <div class="product-card">
+                        <img src="~/images/cafe1_clean.png" alt="Espresso">
+                        <h3>Espresso</h3>
+                        <div class="price">
+                            <span class="new-price">1.080.000đ</span>
+                        </div>
+                        <button class="btn-order">Đặt ngay</button>
+                    </div>
 
-            <div class="product-card">
-                <img src="~/images/cafe3_clean.png" alt="Latte">
-                <h3>Latte</h3>
-                <p class="price">60.000đ</p>
-                <button class="btn-order">Đặt ngay</button>
-            </div>
+                    <div class="product-card">
+                        <img src="~/images/cafe2_clean.png" alt="Hộp quà Cà phê Chồn Legendee">
+                        <h3>Hộp quà Cà phê Chồn Legendee</h3>
+                        <div class="price">
+                            <span class="new-price">2.049.000đ</span>
+                            <span class="old-price">2.200.000đ</span>
+                        </div>
+                        <button class="btn-order">Đặt ngay</button>
+                    </div>
 
-            <div class="product-card">
-                <img src="~/images/cafe4_clean.png" alt="Americano">
-                <h3>Americano</h3>
-                <p class="price">45.000đ</p>
-                <button class="btn-order">Đặt ngay</button>
+                    <div class="product-card">
+                        <img src="~/images/cafe3_clean.png" alt="Cafe Trung Nguyên Sáng tạo 8 – 250gr">
+                        <h3>Cafe Trung Nguyên Sáng tạo 8 – 250gr</h3>
+                        <div class="price">
+                            <span class="new-price">269.000đ</span>
+                            <span class="old-price">305.000đ</span>
+                        </div>
+                        <button class="btn-order">Đặt ngay</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="~/images/cafe4_clean.png" alt="Americano">
+                        <h3>Americano</h3>
+                        <div class="price">
+                            <span class="new-price">529.000đ</span>
+                            <span class="old-price">580.000đ</span>
+                        </div>
+                        <button class="btn-order">Đặt ngay</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Ảnh bên trái -->
+            <div class="col-md-6">
+                <img src="~/images/banh-mi.jpg" alt="Bánh Mì" class="img-fluid rounded">
+            </div>
 
+            <!-- Text bên phải -->
+            <div class="col-md-6 text-center ">
+                <h2 class="fw-bold">Món mới<br>Bánh Mì MHKCafe</h2>
+                <p class="text-muted">Ăn là đi</p>
+                <button class="btn btn-outline-dark rounded-pill px-4 py-2">
+                    KHÁM PHÁ NGAY
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Cột chữ bên trái -->
+            <div class="col-md-6 text-center">
+                <h2 class="fw-bold">Món mới<br>Cafe Đen MHKCafe</h2>
+                <p class="text-muted">Uống cũng đi</p>
+                <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2">KHÁM PHÁ NGAY</a>
+            </div>
+
+            <!-- Cột ảnh bên phải -->
+            <div class="col-md-6 text-center">
+                <img src="images/ca-phe-den.jpg" class="img-fluid rounded" alt="Cafe Đen">
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="text-white p-3" style="background-color: #212529">Tin tức mới nhất về MHKCafe</h2>
+        <div class="row">
+
+            <!-- Bài viết 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="news-card shadow-sm">
+                    <img src="images/ong2bich.jpg" class="card-img-top" alt="Tin tức 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Đột tử vì uống cafe của MHK ????</h5>
+                        <p class="card-text">thanh niên 20 tuổi uống cafe dẫn đến đột tử</p>
+                        <a href="#" class="btn btn-outline-primary">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bài viết 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="news-card shadow-sm">
+                    <img src="images/tridodai.jpg" class="card-img-top" alt="Tin tức 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Kĩ thuật mind control đẳng cấp nhất khi bạn uống cafe của MHK</h5>
+                        <p class="card-text">Tìm hiểu vì sao cafe có thể khiến bạn mind control đẳng cấp hơn.</p>
+                        <a href="#" class="btn btn-outline-primary">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bài viết 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="news-card shadow-sm">
+                    <img src="images/cafe5.jpg" class="card-img-top" alt="Tin tức 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Lợi ích sức khỏe từ cafe</h5>
+                        <p class="card-text">Cafe không chỉ giúp tỉnh táo mà còn mang lại nhiều lợi ích bất ngờ.</p>
+                        <a href="#" class="btn btn-outline-primary">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-light pt-4 pb-2 mt-5">
