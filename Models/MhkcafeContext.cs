@@ -27,17 +27,17 @@ public partial class MhkcafeContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=TRONGNHAT\\HUNG;Database=MHKCafe;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-IGIO92E,1433;Database=MHKCafe;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Admin>(entity =>
         {
-            entity.HasKey(e => e.AdminId).HasName("PK__Admin__719FE4E888DD635E");
+            entity.HasKey(e => e.AdminId).HasName("PK__Admin__719FE4E8F44E57F1");
 
             entity.ToTable("Admin");
 
-            entity.HasIndex(e => e.Email, "UQ__Admin__A9D10534A5E4B7E8").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Admin__A9D10534494CA6B4").IsUnique();
 
             entity.Property(e => e.AdminId).HasColumnName("AdminID");
             entity.Property(e => e.Email).HasMaxLength(100);
@@ -53,7 +53,7 @@ public partial class MhkcafeContext : DbContext
 
         modelBuilder.Entity<ChiTietHoaDon>(entity =>
         {
-            entity.HasKey(e => e.ChiTietId).HasName("PK__ChiTietH__B117E9EA7A8EB062");
+            entity.HasKey(e => e.ChiTietId).HasName("PK__ChiTietH__B117E9EA0CA63CF9");
 
             entity.ToTable("ChiTietHoaDon");
 
@@ -77,7 +77,7 @@ public partial class MhkcafeContext : DbContext
 
         modelBuilder.Entity<HoaDon>(entity =>
         {
-            entity.HasKey(e => e.HoaDonId).HasName("PK__HoaDon__6956CE69852109D5");
+            entity.HasKey(e => e.HoaDonId).HasName("PK__HoaDon__6956CE6975696C3B");
 
             entity.ToTable("HoaDon");
 
@@ -103,11 +103,11 @@ public partial class MhkcafeContext : DbContext
 
         modelBuilder.Entity<NguoiDung>(entity =>
         {
-            entity.HasKey(e => e.NguoiDungId).HasName("PK__NguoiDun__C4BBA4DDE51A3286");
+            entity.HasKey(e => e.NguoiDungId).HasName("PK__NguoiDun__C4BBA4DDDB65D484");
 
             entity.ToTable("NguoiDung");
 
-            entity.HasIndex(e => e.Email, "UQ__NguoiDun__A9D105347ED31EDA").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__NguoiDun__A9D10534061B2088").IsUnique();
 
             entity.Property(e => e.NguoiDungId).HasColumnName("NguoiDungID");
             entity.Property(e => e.DiaChi).HasMaxLength(255);
@@ -122,7 +122,7 @@ public partial class MhkcafeContext : DbContext
 
         modelBuilder.Entity<ThucDon>(entity =>
         {
-            entity.HasKey(e => e.ThucDonId).HasName("PK__ThucDon__447EBEDB371910A4");
+            entity.HasKey(e => e.ThucDonId).HasName("PK__ThucDon__447EBEDB8BC65BA4");
 
             entity.ToTable("ThucDon");
 

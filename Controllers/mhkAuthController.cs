@@ -117,8 +117,7 @@ namespace MHKCafe.Controllers
                     Email = email.Trim(),
                     MatKhau = matKhau,
                     Quyen = quyen,
-                    NgayTao = DateTime.Now,
-                    TrangThai = "Active"
+                    NgayTao = DateTime.Now
                 };
 
                 _context.Admins.Add(newAdmin);

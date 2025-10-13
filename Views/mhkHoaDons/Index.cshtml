@@ -1,77 +1,82 @@
 ﻿@model IEnumerable<MHKCafe.Models.HoaDon>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Danh sách hoá đơn";
 }
 
-<h1>Index</h1>
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold text-primary">
+            <i class="bi bi-receipt"></i> Danh sách hoá đơn
+        </h2>
+        <a asp-action="Create" class="btn btn-success shadow-sm">
+            <i class="bi bi-plus-circle"></i> Tạo hoá đơn mới
+        </a>
+    </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TenKhachHang)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SoDienThoai)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DiaChiGiaoHang)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NgayLap)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TongTien)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PhuongThucThanhToan)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrangThai)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NguoiDung)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenKhachHang)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SoDienThoai)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DiaChiGiaoHang)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NgayLap)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TongTien)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PhuongThucThanhToan)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TrangThai)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NguoiDung.NguoiDungId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.HoaDonId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.HoaDonId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.HoaDonId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-primary text-center">
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.TenKhachHang)</th>
+                        <th>@Html.DisplayNameFor(model => model.SoDienThoai)</th>
+                        <th>@Html.DisplayNameFor(model => model.DiaChiGiaoHang)</th>
+                        <th>@Html.DisplayNameFor(model => model.NgayLap)</th>
+                        <th>@Html.DisplayNameFor(model => model.TongTien)</th>
+                        <th>@Html.DisplayNameFor(model => model.PhuongThucThanhToan)</th>
+                        <th>@Html.DisplayNameFor(model => model.TrangThai)</th>
+                        <th>Người dùng</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.TenKhachHang)</td>
+                            <td>@Html.DisplayFor(modelItem => item.SoDienThoai)</td>
+                            <td>@Html.DisplayFor(modelItem => item.DiaChiGiaoHang)</td>
+                            <td>@item.NgayLap?.ToString("dd/MM/yyyy")</td>
+                            <td class="fw-bold text-success">
+                                @String.Format("{0:N0} ₫", item.TongTien)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PhuongThucThanhToan)
+                            </td>
+                            <td>
+                                @if (item.TrangThai == "Đã giao")
+                                {
+                                    <span class="badge bg-success">Đã giao</span>
+                                }
+                                else if (item.TrangThai == "Đang giao")
+                                {
+                                    <span class="badge bg-warning text-dark">Đang giao</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">@item.TrangThai</span>
+                                }
+                            </td>
+                            <td>@item.NguoiDung?.HoTen</td>
+                            <td>
+                                <a asp-action="Details" asp-route-id="@item.HoaDonId" class="btn btn-sm btn-outline-primary me-1">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@item.HoaDonId" class="btn btn-sm btn-outline-warning me-1">
+                                    <i class="bi bi-pencil"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.HoaDonId" class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap icons (chèn vào _Layout.cshtml nếu chưa có) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
