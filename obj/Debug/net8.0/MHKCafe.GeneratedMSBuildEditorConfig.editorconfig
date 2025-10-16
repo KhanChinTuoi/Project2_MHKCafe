@@ -56,8 +56,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkCart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQ2FydFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/MHKCafe/Project2_MHKCafe/Views/mhkCart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkCart/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrQ2FydFxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/MHKCafe/Project2_MHKCafe/Views/mhkChiTietHoaDons/Create.cshtml]
@@ -100,12 +108,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9hRG9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MHKCafe/Project2_MHKCafe/Views/mhkHome/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9tZVxJbmRleC5jc2h0bWw=
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkHome/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MHKCafe/Project2_MHKCafe/Views/mhkHome/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/MHKCafe/Project2_MHKCafe/Views/mhkNguoiDungs/Create.cshtml]
@@ -128,24 +136,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrTmd1b2lEdW5nc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Index/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcSW5kZXhcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Index/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcSW5kZXhcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Index/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcSW5kZXhcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Index/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcSW5kZXhcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MHKCafe/Project2_MHKCafe/Views/mhkThucDons/Menu/ForCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWhrVGh1Y0RvbnNcTWVudVxGb3JDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/MHKCafe/Project2_MHKCafe/Views/Shared/Error.cshtml]

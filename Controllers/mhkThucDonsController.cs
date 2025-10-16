@@ -155,6 +155,13 @@ namespace MHKCafe.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public IActionResult ForCustomer()
+        {
+            var list = _context.ThucDons.Where(td => td.TrangThai == true).ToList();
+            return View(list);
+        }
+
+
 
         private bool ThucDonExists(int id)
         {

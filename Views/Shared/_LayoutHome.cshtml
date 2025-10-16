@@ -1,4 +1,24 @@
-﻿<!DOCTYPE html>
+﻿@using System.Text.Json
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    // 🔹 Lấy dữ liệu giỏ hàng từ Session
+    var session = HttpContextAccessor.HttpContext.Session;
+    var cartJson = session.GetString("ShoppingCart");
+    int cartCount = 0;
+
+    if (!string.IsNullOrEmpty(cartJson))
+    {
+        try
+        {
+            var cartItems = JsonSerializer.Deserialize<List<MHKCafe.Models.ViewModels.CartItem>>(cartJson);
+            if (cartItems != null)
+                cartCount = cartItems.Sum(item => item.Quantity);
+        }
+        catch { }
+    }
+}
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="utf-8" />
@@ -16,34 +36,40 @@
                 <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="mhkHome" asp-action="Index">
                     <img src="~/images/logo1.jpg" alt="Logo" style="height: 60px;" class="me-2">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav me-auto d-flex flex-row gap-3">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="Index">Trang chủ</a>
+                            <a class="nav-link text-dark" asp-controller="mhkHome" asp-action="Index">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="About">Cửa hàng</a>
+                            <a class="nav-link text-dark" asp-controller="mhkHome" asp-action="About">Cửa hàng</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="About">Thực đơn</a>
+                            <a class="nav-link text-dark" asp-controller="mhkThucDons" asp-action="Index">Thực đơn</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="mhkHome" asp-action="About">Tin tức</a>
+                            <a class="nav-link text-dark" asp-controller="mhkHome" asp-action="Blog">Tin tức</a>
                         </li>
                     </ul>
+
                     <ul class="navbar-nav d-flex flex-row gap-3 align-items-center">
+                        <!-- 🔹 Giỏ hàng có badge -->
                         <li class="nav-item">
                             <a class="btn btn-outline-primary position-relative" asp-controller="mhkCart" asp-action="Index">
                                 <i class="bi bi-cart3"></i> Giỏ Hàng
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartBadge">0</span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartBadge">
+                                    @cartCount
+                                </span>
                             </a>
                         </li>
 
-                        <!-- Hiển thị khi CHƯA đăng nhập -->
+                        <!-- 🔹 Kiểm tra đăng nhập -->
                         @if (Context.Session.GetInt32("AdminId") == null)
                         {
                             <li class="nav-item">
@@ -59,7 +85,6 @@
                         }
                         else
                         {
-                            <!-- Hiển thị khi ĐÃ đăng nhập -->
                             <li class="nav-item dropdown">
                                 <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                                     <i class="bi bi-person-circle"></i> @Context.Session.GetString("HoTen")
@@ -76,6 +101,7 @@
             </div>
         </nav>
     </header>
+
     <div class="container">
         @RenderBody()
     </div>
@@ -86,43 +112,31 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    <!-- JavaScript cho giỏ hàng -->
+    <!-- ✅ Cập nhật động số lượng giỏ hàng -->
     <script>
-        // Hàm thêm vào giỏ hàng toàn cục
-        function addToCart(productId, productName, price, imageUrl) {
-            fetch('/MhkCart/AddToCart', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
-                },
-                body: JSON.stringify({
-                    productId: productId,
-                    productName: productName,
-                    price: price,
-                    imageUrl: imageUrl,
-                    quantity: 1
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    // Hiển thị thông báo
-                    showCartNotification('✅ Đã thêm "' + productName + '" vào giỏ hàng!');
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+        });
 
-                    // Cập nhật số lượng giỏ hàng
-                    updateCartBadge(data.totalItems);
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                showCartNotification('❌ Có lỗi xảy ra khi thêm vào giỏ hàng!');
-            });
+        function updateCartCount() {
+            fetch('/mhkCart/GetCartCount')
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) updateCartBadge(data.totalItems);
+                })
+                .catch(err => console.error(err));
         }
 
-        // Hàm hiển thị thông báo
+        function updateCartBadge(count) {
+            const badge = document.getElementById('cartBadge');
+            if (badge) {
+                badge.textContent = count;
+                badge.classList.add('pulse');
+                setTimeout(() => badge.classList.remove('pulse'), 1000);
+            }
+        }
+
         function showCartNotification(message) {
-            // Tạo toast notification
             const toast = document.createElement('div');
             toast.className = 'position-fixed bottom-0 end-0 p-3';
             toast.style.zIndex = '1050';
@@ -132,47 +146,30 @@
                         <strong class="me-auto">MHK Cafe</strong>
                         <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
                     </div>
-                    <div class="toast-body">
-                        ${message}
-                    </div>
-                </div>
-            `;
+                    <div class="toast-body">${message}</div>
+                </div>`;
             document.body.appendChild(toast);
-
-            // Tự động xóa sau 3 giây
-            setTimeout(() => {
-                toast.remove();
-            }, 3000);
+            setTimeout(() => toast.remove(), 3000);
         }
 
-        // Hàm cập nhật badge giỏ hàng
-        function updateCartBadge(count) {
-            const cartBadge = document.getElementById('cartBadge');
-            if (cartBadge) {
-                cartBadge.textContent = count;
-                // Hiệu ứng nhấp nháy
-                cartBadge.classList.add('pulse');
-                setTimeout(() => {
-                    cartBadge.classList.remove('pulse');
-                }, 1000);
-            }
-        }
-
-        // Load số lượng giỏ hàng khi trang được tải
-        document.addEventListener('DOMContentLoaded', function() {
-            updateCartCount();
-        });
-
-        // Hàm lấy số lượng giỏ hàng từ server
-        function updateCartCount() {
-            fetch('/MhkCart/GetCartCount')
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        updateCartBadge(data.totalItems);
-                    }
+        function addToCart(productId, productName, price, imageUrl) {
+            fetch('/mhkCart/AddToCart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    productId, productName, price, imageUrl, quantity: 1
                 })
-                .catch(error => console.error('Error:', error));
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    showCartNotification(`✅ Đã thêm "${productName}" vào giỏ hàng!`);
+                    updateCartBadge(data.totalItems);
+                }
+            })
+            .catch(() => showCartNotification('❌ Lỗi khi thêm sản phẩm!'));
         }
     </script>
 
@@ -202,7 +199,6 @@
 
             .btn-outline-primary:hover {
                 background-color: #8B4513;
-                border-color: #8B4513;
                 color: white;
             }
 
@@ -212,10 +208,9 @@
 
         .badge.bg-danger {
             background-color: #dc3545 !important;
-            font-size: 0.7em;
+            font-size: 0.75em;
         }
 
-        /* Style cho dropdown menu */
         .dropdown-menu {
             border: 1px solid #8B4513;
         }
