@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MHKCafe.Models.ChiNhanh>
+
+@{
+    ViewData["Title"] = "Hệ thống chi nhánh MHKCafe";
+}
+
+<div class="container py-5">
+    <h2 class="text-center text-primary mb-4">
+        ☕ Hệ Thống Chi Nhánh MHKCafe
+    </h2>
+
+    <div class="row">
+        @foreach (var cn in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0 rounded-3">
+                    <img src="@cn.HinhAnh" class="card-img-top rounded-top-3" alt="@cn.Ten">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">@cn.Ten</h5>
+                        <p class="card-text"><strong>📍 Địa chỉ:</strong> @cn.DiaChi</p>
+                        <p class="card-text"><strong>📞 SĐT:</strong> @cn.SoDienThoai</p>
+                        <a href="#" class="btn btn-outline-primary w-100">Xem bản đồ</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    h2 {
+        font-weight: 600;
+    }
+
+    .card {
+        transition: transform 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+</style>

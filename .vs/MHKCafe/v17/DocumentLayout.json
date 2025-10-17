@@ -3,6 +3,58 @@
   "WorkspaceRootPath": "C:\\MHKCafe\\Project2_MHKCafe\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\controllers\\mhkhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:controllers\\mhkhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\views\\shared\\_mhkadminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\shared\\_mhkadminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\views\\mhkhome\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\mhkhome\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\controllers\\mhkadminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:controllers\\mhkadminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\views\\mhkchinhanh\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\mhkchinhanh\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\views\\mhkblog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\mhkblog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\views\\mhkblog\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\mhkblog\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\controllers\\mhkchinhanhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:controllers\\mhkchinhanhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\models\\chinhanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:models\\chinhanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\controllers\\mhkblogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:controllers\\mhkblogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\controllers\\mhkcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:controllers\\mhkcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\controllers\\mhkchitiethoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:controllers\\mhkchitiethoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,20 +75,8 @@
       "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\mhkthucdons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\models\\viewmodels\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:models\\viewmodels\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\controllers\\mhkcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:controllers\\mhkcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|c:\\mhkcafe\\project2_mhkcafe\\views\\mhkhome\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCE5DEE7-F44A-48C9-884A-BDEC3F1966D3}|MHKCafe.csproj|solutionrelative:views\\mhkhome\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,125 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "mhkChiTietHoaDonsController.cs",
-              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkChiTietHoaDonsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\mhkChiTietHoaDonsController.cs",
-              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkChiTietHoaDonsController.cs",
-              "RelativeToolTip": "Controllers\\mhkChiTietHoaDonsController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T14:46:04.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Success.cshtml",
-              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkCart\\Success.cshtml",
-              "RelativeDocumentMoniker": "Views\\mhkCart\\Success.cshtml",
-              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkCart\\Success.cshtml",
-              "RelativeToolTip": "Views\\mhkCart\\Success.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAIwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-16T14:44:20.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Checkout.cshtml",
-              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkCart\\Checkout.cshtml",
-              "RelativeDocumentMoniker": "Views\\mhkCart\\Checkout.cshtml",
-              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkCart\\Checkout.cshtml",
-              "RelativeToolTip": "Views\\mhkCart\\Checkout.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAIwGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-16T14:44:02.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkAuth\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\mhkAuth\\Register.cshtml",
-              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkAuth\\Register.cshtml",
-              "RelativeToolTip": "Views\\mhkAuth\\Register.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-16T14:39:36.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkThucDons\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\mhkThucDons\\Index.cshtml",
-              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkThucDons\\Index.cshtml",
-              "RelativeToolTip": "Views\\mhkThucDons\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAIwFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-16T14:38:57.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ShoppingCart.cs",
-              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Models\\ViewModels\\ShoppingCart.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\ShoppingCart.cs",
-              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Models\\ViewModels\\ShoppingCart.cs",
-              "RelativeToolTip": "Models\\ViewModels\\ShoppingCart.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA2wEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T14:36:03.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "mhkCartController.cs",
-              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkCartController.cs",
-              "RelativeDocumentMoniker": "Controllers\\mhkCartController.cs",
-              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkCartController.cs",
-              "RelativeToolTip": "Controllers\\mhkCartController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T14:34:50.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_LayoutHome.cshtml",
-              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\Shared\\_LayoutHome.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutHome.cshtml",
-              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\Shared\\_LayoutHome.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LayoutHome.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-16T14:23:25.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkHome\\About.cshtml",
-              "RelativeDocumentMoniker": "Views\\mhkHome\\About.cshtml",
-              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkHome\\About.cshtml",
-              "RelativeToolTip": "Views\\mhkHome\\About.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-16T14:22:47.302Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -172,6 +95,247 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mhkHomeController.cs",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkHomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\mhkHomeController.cs",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkHomeController.cs",
+              "RelativeToolTip": "Controllers\\mhkHomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:35:18.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_mhkAdminLayout.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\Shared\\_mhkAdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_mhkAdminLayout.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\Shared\\_mhkAdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_mhkAdminLayout.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADoAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T14:11:07.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mhkAdminsController.cs",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkAdminsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\mhkAdminsController.cs",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkAdminsController.cs",
+              "RelativeToolTip": "Controllers\\mhkAdminsController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowE8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:10:22.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_AuthLayout.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AuthLayout.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AuthLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T14:07:39.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkChiNhanh\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\mhkChiNhanh\\Index.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkChiNhanh\\Index.cshtml",
+              "RelativeToolTip": "Views\\mhkChiNhanh\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T14:02:55.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkBlog\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\mhkBlog\\Index.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkBlog\\Index.cshtml",
+              "RelativeToolTip": "Views\\mhkBlog\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T13:56:00.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkHome\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\mhkHome\\About.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkHome\\About.cshtml",
+              "RelativeToolTip": "Views\\mhkHome\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-16T14:22:47.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LayoutHome.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutHome.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LayoutHome.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADgAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-16T14:23:25.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkBlog\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Views\\mhkBlog\\Detail.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkBlog\\Detail.cshtml",
+              "RelativeToolTip": "Views\\mhkBlog\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T13:57:36.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "mhkChiNhanhController.cs",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkChiNhanhController.cs",
+              "RelativeDocumentMoniker": "Controllers\\mhkChiNhanhController.cs",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkChiNhanhController.cs",
+              "RelativeToolTip": "Controllers\\mhkChiNhanhController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:02:17.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChiNhanh.cs",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Models\\ChiNhanh.cs",
+              "RelativeDocumentMoniker": "Models\\ChiNhanh.cs",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Models\\ChiNhanh.cs",
+              "RelativeToolTip": "Models\\ChiNhanh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:01:52.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "mhkBlogController.cs",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkBlogController.cs",
+              "RelativeDocumentMoniker": "Controllers\\mhkBlogController.cs",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkBlogController.cs",
+              "RelativeToolTip": "Controllers\\mhkBlogController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA+wAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T13:54:53.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkCart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Views\\mhkCart\\Checkout.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkCart\\Checkout.cshtml",
+              "RelativeToolTip": "Views\\mhkCart\\Checkout.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAIwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-16T14:44:02.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkCart\\Success.cshtml",
+              "RelativeDocumentMoniker": "Views\\mhkCart\\Success.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkCart\\Success.cshtml",
+              "RelativeToolTip": "Views\\mhkCart\\Success.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-16T14:44:20.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkAuth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\mhkAuth\\Register.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkAuth\\Register.cshtml",
+              "RelativeToolTip": "Views\\mhkAuth\\Register.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-16T14:39:36.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkThucDons\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\mhkThucDons\\Index.cshtml",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Views\\mhkThucDons\\Index.cshtml",
+              "RelativeToolTip": "Views\\mhkThucDons\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAIwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-16T14:38:57.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Models\\ViewModels\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ShoppingCart.cs",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Models\\ViewModels\\ShoppingCart.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ShoppingCart.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA2wEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:36:03.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "mhkCartController.cs",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkCartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\mhkCartController.cs",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkCartController.cs",
+              "RelativeToolTip": "Controllers\\mhkCartController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:34:50.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "mhkChiTietHoaDonsController.cs",
+              "DocumentMoniker": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkChiTietHoaDonsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\mhkChiTietHoaDonsController.cs",
+              "ToolTip": "C:\\MHKCafe\\Project2_MHKCafe\\Controllers\\mhkChiTietHoaDonsController.cs",
+              "RelativeToolTip": "Controllers\\mhkChiTietHoaDonsController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:46:04.658Z"
             }
           ]
         }

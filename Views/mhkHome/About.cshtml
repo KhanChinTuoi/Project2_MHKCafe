@@ -1,5 +1,71 @@
 ﻿@{
-    ViewData["Title"] = "Chào mừng đến với Cafe MHK";
+    ViewData["Title"] = "Thông tin sinh viên";
 }
-<div>
+
+<div class="container py-5">
+    <h2 class="text-center text-primary mb-4">
+        👨‍🎓 Thông Tin Nhóm Sinh Viên MHKCafe
+    </h2>
+
+    <div class="card shadow-sm border-0 rounded-4 p-4 mb-4">
+        <h4 class="text-secondary mb-3">
+            🏫 Trường Đại học Nguyễn Trãi
+        </h4>
+        <p><strong>Lớp:</strong> K23CNT3</p>
+        <p><strong>Khóa:</strong> K23</p>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 rounded-4 p-3">
+                <div class="card-body">
+                    <img src="/images/student1.png" alt="Nguyễn Văn Khánh" class="img-fluid rounded-circle mb-3" width="120" height="120">
+                    <h5 class="card-title text-primary">Nguyễn Văn Khánh</h5>
+                    <p class="text-muted mb-1">Mã SV: 2310900047</p>
+                    <p>Lớp: K23CNT3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 rounded-4 p-3">
+                <div class="card-body">
+                    <img src="/images/student2.png" alt="Nguyễn Trọng Hưng" class="img-fluid rounded-circle mb-3" width="120" height="120">
+                    <h5 class="card-title text-primary">Nguyễn Trọng Hưng</h5>
+                    <p class="text-muted mb-1">Mã SV: 2310900039</p>
+                    <p>Lớp: K23CNT3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 rounded-4 p-3">
+                <div class="card-body">
+                    <img src="/images/student3.png" alt="Hà Quang Minh" class="img-fluid rounded-circle mb-3" width="120" height="120">
+                    <h5 class="card-title text-primary">Hà Quang Minh</h5>
+                    <p class="text-muted mb-1">Mã SV: 2310900067</p>
+                    <p>Lớp: K23CNT3</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    h2 {
+        font-weight: 600;
+    }
+
+    .card {
+        transition: all 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+</style>

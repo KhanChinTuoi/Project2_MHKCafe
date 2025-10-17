@@ -1,0 +1,15 @@
+﻿@model MHKCafe.Models.BlogPost
+
+@{
+    ViewData["Title"] = Model.TieuDe;
+}
+
+<div class="container py-5">
+    <div class="card shadow-sm border-0 rounded-3 p-4">
+        <img src="@Model.HinhAnh" class="img-fluid rounded-3 mb-4" alt="@Model.TieuDe" />
+        <h2 class="text-primary">@Model.TieuDe</h2>
+        <p class="text-muted">@Model.NgayDang</p>
+        <p>@Model.NoiDung</p>
+        <a asp-controller="Blog" asp-action="Index" class="btn btn-outline-secondary mt-3">← Quay lại Blog</a>
+    </div>
+</div>
